@@ -9,11 +9,15 @@
         "use": "@vercel/static"
       },
       {
-        "src": "scripts/*",
+        "src": "*",
         "use": "@vercel/static"
       },
       {
         "src": "*.png",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "*.avif",
         "use": "@vercel/static"
       }
     ],
