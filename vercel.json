@@ -9,10 +9,6 @@
         "use": "@vercel/static"
       },
       {
-        "src": "*",
-        "use": "@vercel/static"
-      },
-      {
         "src": "*.png",
         "use": "@vercel/static"
       },
@@ -24,7 +20,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/*.html"
+        "dest": "/$1"
       }
     ]
   }
