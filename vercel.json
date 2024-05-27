@@ -5,7 +5,7 @@
         "use": "@vercel/static"
       },
       {
-        "src": "styles/*",
+        "src": "*.css",
         "use": "@vercel/static"
       },
       {
@@ -13,7 +13,7 @@
         "use": "@vercel/static"
       },
       {
-        "src": "images/*",
+        "src": "*.png",
         "use": "@vercel/static"
       }
     ],
