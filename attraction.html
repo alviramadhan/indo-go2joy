@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="attractionStyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction in Indonesia</title>
+</head>
+
+<body style="background-color: #17818F;">
+    <header>
+        <img src="logo.png" alt="Indo-Go2Joy Logo">
+    </header>
+
+    <nav>
+        <a href="story.html">Story</a>
+        <a href="food.html">Food</a>
+        <a href="attraction.html">Attraction</a>
+        <a href="map.html">Map</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="map">
+    <img  src="map.png"  usemap="#workmap"  >
+    </div>
+    
+    <map name="workmap">
+        <area id="sumatra" shape="poly" coords="33,156,114,180,337,339,455,412,410,514,358,520,8,180" alt="Sumatra" onclick="showPopup('sumatra')">
+        <area shape="poly" coords="376,541,412,522,587,533,701,550,715,576,712,602,639,601,493,583,422,568" alt="Java" onclick="showPopup('java')">
+        <area shape="poly" coords="723,592,742,582,1096,583,1104,632,1064,656,920,653,737,616" alt="Bali" onclick="showPopup('bali')">
+        <area shape="poly" coords="542,278,664,290,733,261,758,210,817,212,839,233,869,317,824,367,772,450,720,461,569,437,526,369,514,313" alt="Borneo" onclick="showPopup('borneo')">
+        <area shape="poly" coords="919,312,944,300,1104,293,1021,509,906,515,870,450,876,404" alt="Sulawesi" onclick="showPopup('sulawesi')">
+        <area shape="poly" coords="1193,280,1221,300,1306,462,1139,462,1119,439" alt="Maluku" onclick="showPopup('maluku')">
+        <area shape="poly" coords="1287,374,1363,350,1555,386,1669,419,1660,640,169,614,1307,579,1335,431" alt="Papua" onclick="showPopup('papua')">
+      </map>
+
+      <div id="popup-sumatra" class="popupA">
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <h1>Piring Dance</h1>
+                <img src="Tari Piring.png" style="width:100%" onclick="redirectToLink('Piring Dance')">
+                <p>
+                    Piring Dance is a type of culture that is very famous in the Minang region. 
+                    To be precise, it comes from Solok City, West Sumatra. 
+                    Not only are the movements beautiful, but the philosophy behind them is also quite interesting. 
+                    This dance, which has existed since the 12th century, was originally used to worship gods such as the God of Rice. 
+                    As time goes by, this dance is now used for entertainment. 
+                    As the name suggests, this dance uses plates as one of its attributes. 
+                    Usually, the number of dancers is odd, ranging from 3, 5, to seven people.
+                </p>
+            </div>
+            <div class="mySlides1">
+                <h1>Tabuik Festival </h1>
+                <img src="Tabuik Festival.png" style="width:100%" onclick="redirectToLink('Tabuik Festival')">
+                <p>
+                    The Sumatra Tabuik Festival is a vibrant cultural event held annually in the coastal town of Pariaman, West Sumatra, Indonesia. 
+                    This festival is deeply rooted in the local Minangkabau culture and commemorates the martyrdom of Imam Hussein, the grandson of Prophet Muhammad. 
+                    The highlight of the festival is the procession of towering, ornate structures called "tabuik," which represent the tombs of Imam Hussein and his loyal companion. 
+                    These tabuik are elaborately decorated and carried through the streets amidst a colorful parade accompanied by traditional music and dance performances. 
+                    The festival also features various rituals, including reenactments of historical events and offerings to honor the departed. 
+                    It serves as a significant cultural and religious gathering, bringing together communities to celebrate their heritage and faith.
+                </p>
+            </div> 
+            <div class="mySlides1">
+                <h1>Weh Island</h1>
+                <img src="Weh Island.png" style="width:100%" onclick="redirectToLink('Weh Island')">
+                <p>
+                    Weh Island, situated at the northern tip of Sumatra, Indonesia, is renowned for its breathtaking natural beauty and rich marine biodiversity. 
+                    This picturesque island, often referred to as "Sabang" after its main town, offers visitors stunning beaches with crystal-clear waters ideal for swimming, snorkeling, and diving. 
+                    One of the island's highlights is the underwater volcano, known as "Kawah Gunung Api," where divers can experience unique underwater landscapes and encounters with diverse marine life. 
+                    Weh Island is also home to a thriving ecosystem of coral reefs, making it a paradise for underwater enthusiasts. 
+                    Beyond its natural wonders, the island boasts a laid-back atmosphere, charming local villages, and opportunities to explore its cultural heritage, making it a must-visit destination for travelers seeking both relaxation and adventure.
+                </p>
+            </div>
+            <div class="mySlides1">
+                <h1>Way Kambas National Park</h1>
+                <img src="Way Ksmbsd NP.png" style="width:100%">
+                <p>
+                    Bukit Barisan Selatan National Park, located in southern Sumatra, Indonesia, encompasses the Bay Kambas area, renowned for its vital role in conservation efforts, particularly for the critically endangered Sumatran elephant. 
+                    Bay Kambas is a sanctuary within the park dedicated to the protection and rehabilitation of these majestic creatures. 
+                    Here, visitors have the unique opportunity to observe elephants in their natural habitat and learn about ongoing conservation initiatives aimed at preserving this iconic species. 
+                    The area also offers stunning biodiversity, including lush rainforests, diverse wildlife, and picturesque landscapes, making it a haven for nature enthusiasts and researchers alike. 
+                    Additionally, Bay Kambas provides ecotourism opportunities, such as guided jungle treks and wildlife watching, allowing visitors to experience the beauty and importance of Sumatra's natural heritage firsthand while supporting conservation efforts.
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span id="currentPageLabel0" class="currentPageLabel"></span>
+        </div>
+        <button onclick="closePopup('popup-sumatra')">X</button>
+    </div>
+  
+    <div id="popup-java" class="popupA">
+        <div class="slideshow-container">
+            <div class="mySlides2">
+                <h1>Borobudur Temple</h1>
+                <img src="Borobudur Temple.png" onclick="redirectToLink('Borobudur Temple')">
+                <p>
+                    Borobudur Temple, located in Central Java, Indonesia, is one of the most iconic and significant Buddhist monuments in the world. 
+                    Built during the 9th century under the Sailendra dynasty, this magnificent temple complex stands as a testament to ancient Javanese architectural and artistic prowess. 
+                    Rising dramatically from the lush green landscape, Borobudur consists of nine stacked platforms adorned with intricately carved relief panels and over 500 Buddha statues. 
+                    The temple's design reflects Buddhist cosmology, with its three circular platforms representing the realms of desire, form, and formlessness, culminating in a large central stupa symbolizing enlightenment.
+                </p>
+                <p>
+                    Visitors to Borobudur are captivated by its grandeur and spiritual ambiance, particularly during sunrise or sunset when the temple is bathed in ethereal light. 
+                    The intricate relief panels narrate the life of Buddha and his teachings, offering insight into ancient Javanese culture and religious beliefs. 
+                    Borobudur was designated a UNESCO World Heritage Site in 1991 and remains a pilgrimage site for Buddhists as well as a popular destination for tourists seeking to marvel at its architectural splendor and historical significance.
+                </p>
+            </div>
+            <div class="mySlides2">
+                <h1>Istiqual Mosque</h1>
+                <img src="Istiqual Mosque.png" onclick="redirectToLink('Istiqual Mosque')">
+                <p>
+                    The Istiqlal Mosque, located in Jakarta, Java, is the largest mosque in Southeast Asia and a symbol of Indonesia's religious diversity and tolerance. 
+                    Designed by Christian architect Frederich Silaban, the mosque's construction began in 1961 and was completed in 1978. 
+                    Its name, "Istiqlal," translates to "independence" in Arabic, commemorating Indonesia's struggle for independence from Dutch colonial rule.
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span id="currentPageLabel1" class="currentPageLabel"></span>
+        </div>
+        <button onclick="closePopup('popup-java')">X</button>
+    </div>
+ 
+    <div id="popup-bali" class="popupA">
+        <div class="slideshow-container">
+            <div class="mySlides3">
+                <h1>Tanah Lot Temple</h1>
+                <img src="tanah lot.png" onclick="redirectToLink('Tanah Lot Temple')">
+                <p>
+                    Perched off the coast of Bali in the village of Beraban - sometimes appearing to be floating in the sea - is the sacred temple of Tanah Lot. 
+                    One of seven sea temples found along Bali's coast, Tanah Lot is dedicated to sea gods and is believed to protect the island from evil spirits. 
+                    It also happens to offer one of the most incredible and unique views of the crashing waves on the Balinese coast. 
+                    Head to the iconic landmark to watch the sunset, take in the panoramic views, and experience what is easily one of Bali's best temples.
+                </p>
+                <p>
+                    The site is adorned with tropical gardens and art shops, offering a serene ambiance for exploration. 
+                    Visitors should respect temple customs and exercise caution near the waves. 
+                    Sunset visits are especially magical, often accompanied by traditional Kecak performances and delicious local cuisine. 
+                    Tanah Lot Temple encapsulates Bali's rich culture and natural splendor, making it a must-visit destination for travelers.
+                </p>
+            </div>
+            <div class="mySlides3">
+                <h1>Tirta Empul Temple</h1>
+                <img src="Tirta Empul Temple.png" onclick="redirectToLink('Tirta Empul Temple')">
+                <p>
+                    Mayadenawa's evasion of Indra's troops spanned various locations, including rivers like Petanu and Pakerisan, and north of Tampaksiring. 
+                    Notably, Tampaksiring derives its name from this legend, with "tampak" meaning 'feet' and "siring" meaning 'sideways', referencing Mayadenawa's fleeing footprints. 
+                    It was at Tampaksiring where Mayadenawa created a poisoned spring, leading to the miraculous emergence of Tirta Empul, a purifying spring, by Indra's intervention. 
+                    This event is central to the Balinese Hindu celebrations of Galungan and Kuningan.
+                </p>
+                <p>
+                    This ancient temple is a legendary part of Bali where it is said that a major battle between good and evil was won.
+                    The name of the temple complex means “holy water spring”, Tirta Empul boasts a sacred water source that feeds purification baths where worshippers can purify their spirits., pools, and fish ponds. 
+                    The temple complex comprises three main courtyards, featuring lush gardens, statues, and tropical plants.
+                    It has some very attractive statues too and it’s worth a long walk around the gardens to admire the Balinese craftsmanship on display.
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span id="currentPageLabel2" class="currentPageLabel"></span>
+        </div>
+        <button onclick="closePopup('popup-bali')">X</button>
+    </div>
+
+    <div id="popup-borneo" class="popupA">
+        <div class="slideshow-container">
+            <div class="mySlides4">
+                <h1>Danum Valley</h1>
+                <img src="Danum Valley.png" onclick="redirectToLink('Danum Valley')">
+                <p>
+                    Danum Valley Conservation Area is a pristine rainforest sanctuary renowned for its extraordinary biodiversity and untouched natural beauty. 
+                    Spanning over 438 square kilometers of primary rainforest, Danum Valley is home to a remarkable array of flora and fauna, including rare and endangered species such as orangutans, pygmy elephants, and clouded leopards. 
+                    The dense canopy of the forest shelters a network of hiking trails leading to majestic waterfalls, ancient trees, and breathtaking viewpoints, offering visitors an immersive experience in one of the world's oldest rainforests.
+                </p>
+                <p>
+                    Visitors to Danum Valley have the opportunity to embark on guided treks, wildlife-spotting excursions, and canopy walks led by experienced local guides, allowing them to discover the rich diversity of plant and animal life that thrives within this pristine ecosystem. 
+                    Additionally, the conservation area provides comfortable accommodations ranging from rustic lodges to luxury eco-resorts, enabling guests to immerse themselves in the natural surroundings while contributing to the protection of this vital habitat through sustainable tourism practices.
+                </p>
+            </div>
+            <div class="mySlides4">
+                <h1>Mount Kinabalu</h1>
+                <img src="Mount Kinabalu.png" onclick="redirectToLink('Mount Kinabalu')">
+                <p>
+                    Mount Kinabalu, towering majestically over the Malaysian state of Sabah on the island of Borneo, is the highest peak in Southeast Asia. 
+                    This iconic mountain, standing at an impressive 4,095 meters (13,435 feet) above sea level, is a UNESCO World Heritage Site and one of the most popular climbing destinations in the region. Its name, Kinabalu, is derived from the Kadazan Dusun words "Aki Nabalu," meaning "the revered place of the dead." 
+                    The mountain holds immense cultural significance for the local Kadazan Dusun people, who consider it a sacred and spiritual place.
+                </p>
+                <p>
+                    Climbing Mount Kinabalu offers adventurers a challenging yet rewarding experience, with various trails catering to both novice and experienced climbers. 
+                    The journey to the summit takes climbers through a diverse range of ecosystems, from lush tropical rainforests to alpine meadows and granite peaks. 
+                    At the summit, climbers are greeted by breathtaking panoramic views of the surrounding landscapes, including the sprawling Kinabalu Park, verdant valleys, and distant islands dotting the horizon. 
+                    With its stunning natural beauty, cultural significance, and challenging ascent, Mount Kinabalu captivates the hearts and minds of all who dare to conquer its heights.
+                </p>
+            </div>
+            <div class="mySlides4">
+                <h1>Mount Mulu</h1>
+                <img src="Gunung Mulu.png" onclick="redirectToLink('Mount Mulu')">
+                <p>
+                    Gunung Mulu National Park, is a UNESCO World Heritage Site renowned for its outstanding biodiversity and breathtaking landscapes. 
+                    The park is home to Gunung Mulu, one of Southeast Asia's tallest peaks, which towers over lush rainforests, limestone karsts, and intricate cave systems. 
+                    Adventurers flock to Gunung Mulu National Park to explore its vast network of caves, including the world's largest cave chamber, Sarawak Chamber, and the famous Deer Cave, home to millions of bats. 
+                    Visitors can also embark on jungle treks, where they may encounter diverse wildlife such as orangutans, gibbons, and rare bird species. 
+                    With its stunning natural beauty and unparalleled adventure opportunities, Gunung Mulu National Park captivates travelers seeking an unforgettable wilderness experience in the heart of Borneo.
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span id="currentPageLabel3" class="currentPageLabel"></span>
+        </div>
+        <button onclick="closePopup('popup-borneo')">X</button>
+    </div>
+
+    <div id="popup-sulawesi" class="popupA">
+        <div class="slideshow-container">
+            <div class="mySlides5">
+                <h1>Pakarena Dance</h1>
+                <img src="Tari Pakarena.png" onclick="redirectToLink('Pakarena Dance')">
+                <p>
+                    The Pakarena dance is a traditional dance form originating from the Bugis and Makassar ethnic groups of South Sulawesi, Indonesia. 
+                    This graceful and elegant dance is typically performed during ceremonial occasions, such as weddings, festivals, and cultural events, and holds significant cultural and social importance in Bugis and Makassar communities.
+                </p>
+                <p>
+                    Pakarena is characterized by its slow, deliberate movements, which are accompanied by traditional music and chanting. 
+                    Dancers, usually women dressed in vibrant traditional attire, move with fluidity and grace, expressing themes of love, unity, and harmony. 
+                    The dance often involves intricate hand gestures, subtle facial expressions, and gentle swaying motions, symbolizing the beauty and grace of life.
+                </p>
+                <p>
+                    Beyond its aesthetic appeal, the Pakarena dance serves as a means of preserving and transmitting cultural heritage from generation to generation. 
+                    It embodies the values, beliefs, and traditions of the Bugis and Makassar people, reflecting their deep connection to nature, spirituality, and community. 
+                    Through performances of the Pakarena dance, these communities celebrate their identity and strengthen bonds among members, ensuring the continued vitality of their cultural heritage.
+                </p>
+            </div>
+            <div class="mySlides5">
+                <h1>Bunaken Festival</h1>
+                <img src="Bunaken Festival.png" onclick="redirectToLink('Bunaken Festival')">
+                <p>
+                    During the Sulawesi Bunaken Festival, visitors can experience a diverse array of activities and events, including traditional dance performances, music concerts, art exhibitions, culinary showcases, and cultural parades. 
+                    Local communities actively participate in the festivities, offering insights into their customs, traditions, and way of life.
+                </p>
+                <p>
+                    One of the highlights of the festival is its focus on marine conservation and eco-tourism. 
+                    Bunaken Island is renowned for its stunning coral reefs and underwater biodiversity, making it a mecca for scuba diving and snorkeling enthusiasts. 
+                    As part of the festival, initiatives promoting marine conservation and sustainable tourism practices are promoted, raising awareness about the importance of protecting the marine environment.
+                </p>
+                <p>
+                    Overall, the Sulawesi Bunaken Festival serves as a platform for cultural exchange, environmental education, and economic empowerment for local communities. 
+                    It celebrates the unique identity of North Sulawesi while promoting responsible tourism and environmental stewardship, ensuring that this beautiful region and its cultural heritage are preserved for future generations to enjoy.
+                </p>
+            </div>
+            <div class="mySlides5">
+                <h1>Bonerate National Park</h1>
+                <img src="bonerate NP.png" onclick="redirectToLink('Bonerate National Park')">
+                <p>
+                    Bonerate National Park, located in South Sulawesi, Indonesia, is renowned for its pristine coral reefs and marine biodiversity. 
+                    Established in 1992, the park protects extensive limestone plateaus and vibrant underwater ecosystems. Popular for diving and snorkeling, visitors can explore crystal-clear waters teeming with colorful corals, fish, and turtles. 
+                    The park also serves as an important nesting ground for seabirds and offers opportunities for hiking, birdwatching, and camping. 
+                    By promoting sustainable ecotourism, Bonerate National Park preserves its natural beauty while conserving marine life for future generations to enjoy.
+                </p>
+            </div>
+            <div class="mySlides5">
+                <h1>Malino Highland</h1>
+                <img src="Malino Highland.png" onclick="redirectToLink('Malino Highland')">
+                <p>
+                    Malino Highland, nestled in the mountains of South Sulawesi, Indonesia, offers a serene retreat from the tropical lowlands. 
+                    Known for its cool climate and lush landscapes, this picturesque destination is a haven for nature lovers and adventure seekers alike. 
+                    Visitors can explore its verdant tea plantations, fruit orchards, and flower gardens, immersing themselves in the region's natural beauty. 
+                    The cool mountain air and serene surroundings provide the perfect backdrop for leisurely walks, outdoor activities, and relaxation.
+                </p>
+                <p>
+                    One of the highlights of Malino Highland is its stunning waterfalls, such as Takapala and Bantimurung Waterfalls, which cascade down rugged cliffs amidst dense forest scenery. 
+                    These natural wonders offer opportunities for swimming, picnicking, and photography, attracting visitors seeking both adventure and tranquility. 
+                    Additionally, cultural landmarks like the Malino Palace and traditional villages provide insights into the region's rich heritage, making Malino Highland a captivating destination where visitors can unwind, explore, and connect with nature and culture.
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span id="currentPageLabel4" class="currentPageLabel"></span>
+        </div>
+        <button onclick="closePopup('popup-sulawesi')">X</button>
+    </div>
+    <div id="popup-maluku" class="popupA">
+        <div class="slideshow-container">
+            <div class="mySlides6">
+                <h1>Cakalele Dance</h1>
+                <img src="Tari Cakalele.png" onclick="redirectToLink('Cakalele Dance')">
+                <p>
+                    The Cakalele dance is a traditional war dance originating from the Maluku Islands in Indonesia, particularly among the Ternate and Tidore communities. 
+                    This dynamic and spirited dance is often performed during ceremonial occasions, cultural festivals, and rituals, reflecting the martial traditions and heritage of the Maluku people.
+                </p>
+                <p>
+                    The Cakalele dance is characterized by its vigorous movements, rhythmic drumming, and elaborate costumes adorned with feathers, shells, and traditional ornaments. 
+                    Dancers, typically male, enact scenes of battle and conquest, depicting warriors preparing for war, engaging in combat, and celebrating victory through choreographed movements and gestures.
+                </p>
+                <p>
+                    Beyond its entertainment value, the Cakalele dance holds cultural significance as a symbol of valor, bravery, and unity within the Maluku communities. 
+                    It serves as a means of preserving and transmitting traditional values, stories, and rituals from generation to generation, fostering a sense of pride and identity among participants and audiences alike. 
+                    Through its dynamic performances and spirited expressions, the Cakalele dance continues to captivate and inspire, showcasing the rich cultural heritage of the Maluku Islands in Indonesia.
+                </p>
+            </div>
+            <div class="mySlides6">
+                <h1>Natsepa Beach</h1>
+                <img src="natsepabeach.png" onclick="redirectToLink('Natsepa Beach')">
+                <p>
+                    Natsepa Beach is a stunning coastal destination located on the island of Ambon, in the Maluku Islands of Indonesia. 
+                    Renowned for its pristine white sands, clear turquoise waters, and picturesque scenery, Natsepa Beach is a popular spot for both locals and tourists seeking relaxation and natural beauty.
+                </p>
+                <p>
+                    Visitors to Natsepa Beach can enjoy a range of activities, including swimming, sunbathing, beach volleyball, and snorkeling. 
+                    The calm and shallow waters make it an ideal spot for families with children to play and splash around safely. 
+                    Additionally, the beach is surrounded by lush greenery, providing shaded areas for picnics and relaxation.
+                </p>
+                <p>
+                    Natsepa Beach is also known for its stunning sunsets, which paint the sky with vibrant hues of orange, pink, and purple, creating a romantic and memorable atmosphere. 
+                    Many visitors gather on the beach in the evening to watch the sunset and capture breathtaking photos of the scenic coastline.</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span id="currentPageLabel5" class="currentPageLabel"></span>
+        </div>
+        <button onclick="closePopup('popup-maluku')">X</button>
+    </div>
+    
+    <div id="popup-papua" class="popupA">
+        <div class="slideshow-container">
+            <div class="mySlides7">
+                <h1>Bukit Jokowi / Jokowi Hill</h1>
+                <img src="Bukit Jokowi.png" onclick="redirectToLink('Bukit Jokowi')">
+                <p>
+                    "Bukit Jokowi" or "Jokowi Hill" is a hill located in the district of Wamena, in the Jayawijaya Regency of Papua province, Indonesia. 
+                    This hill gained its name due to a visit by Joko Widodo, commonly known as Jokowi, who is the former Governor of Jakarta and former President of Indonesia.
+                </p>
+                <p>
+                    The hill offers stunning panoramic views of the surrounding valleys, mountains, and lush green landscapes typical of the Papua region. 
+                    Visitors can hike to the top of Bukit Jokowi to enjoy the breathtaking scenery and take in the beauty of the natural surroundings.
+                </p>
+                <p>
+                    Bukit Jokowi has become a popular tourist destination in Wamena, attracting both domestic and international visitors who come to admire the stunning vistas and experience the tranquility of the Papuan countryside. 
+                    The hill offers opportunities for photography, nature walks, and relaxation, making it a must-visit attraction for travelers exploring the diverse landscapes of Papua province.
+                </p>
+            </div>
+            <div class="mySlides7">
+                <h1>Wafsarak Waterfall</h1>
+                <img src="Wafsarak Waterfall.png" onclick="redirectToLink('Wafsarak Waterfall')">
+                <p>
+                    Wafsarak Waterfall is a hidden gem nestled in the lush jungles of Papua province, Indonesia. 
+                    Located in the Jayawijaya Mountains, near the town of Wamena, this majestic waterfall is renowned for its natural beauty and serene surroundings.
+                    To reach Wafsarak Waterfall, visitors embark on a scenic trek through dense rainforest, crossing streams and navigating rugged terrain. 
+                    The journey to the waterfall is an adventure in itself, offering opportunities to immerse oneself in the pristine wilderness of Papua.
+                </p>
+                <p>
+                    Wafsarak Waterfall is not only a stunning natural attraction but also holds cultural significance for the local indigenous communities. 
+                    It is often regarded as a sacred site, and visitors are encouraged to respect the environment and the traditions of the Papuan people.
+                </p>
+            </div>
+            <div class="mySlides7">
+                <h1>Madang</h1>
+                <img src="madang.png" onclick="redirectToLink('madang')">
+                <p>
+                    Madang is a picturesque coastal town situated on the northern coast of Papua, Indonesia. 
+                    Known for its stunning natural beauty, pristine beaches, and vibrant marine life, Madang attracts visitors seeking both relaxation and adventure. 
+                    The town offers a range of activities, including snorkeling, diving, fishing, and beachcombing, allowing visitors to explore the rich underwater world of the Pacific Ocean. 
+                    Additionally, Madang is surrounded by lush rainforests and scenic landscapes, providing opportunities for hiking, birdwatching, and cultural experiences with local indigenous communities. 
+                    With its idyllic setting and diverse attractions, Madang offers travelers a true taste of paradise in the heart of Papua.
+                </p>
+               
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span id="currentPageLabel6" class="currentPageLabel"></span>
+        </div>
+        <button onclick="closePopup('popup-papua')">X</button>
+    </div>
+    </div>
+   
+    <script>
+        function showPopup(area) {
+            // Hide all popups
+            var popups = document.querySelectorAll('.popup');
+            popups.forEach(function (popup) {
+                popup.style.display = 'none';
+            });
+
+            // Show the popup corresponding to the clicked area
+            var popupId = 'popup-' + area;
+            var popup = document.getElementById(popupId);
+            if (popup) {
+                popup.style.display = 'block';
+                showSlides(1, popupId + '-slideshow'); // Show first slide when popup is displayed
+                function adjustPopupPosition(popup) {
+                    const viewportWidth = window.innerWidth;
+                    const viewportHeight = window.innerHeight;
+                    const popupWidth = popup.offsetWidth;
+                    const popupHeight = popup.offsetHeight;
+
+                    const leftOffset = (viewportWidth - popupWidth) / 2;
+                    const topOffset = (viewportHeight - popupHeight) / 2;
+
+                    popup.style.left = leftOffset + 'px';
+                    popup.style.top = topOffset + 'px';
+                }
+            }
+        }
+        function closePopup(popupId) {
+            // Close the popup corresponding to the given ID
+            var popup = document.getElementById(popupId);
+            if (popup) {
+            popup.style.display = 'none';
+            }
+        }
+
+
+        function adjustMapCoordinates() {
+            // The original width and height of the image
+            const originalWidth = 1700; // Change this to your image's original width
+            const originalHeight = 800; // Change this to your image's original height
+
+            const image = document.querySelector('.map img'); // Select the responsive image
+            if (!image) return;
+
+            // Calculate the scale factors based on current width and height vs original width and height
+            const widthScaleFactor = image.offsetWidth / originalWidth;
+            const heightScaleFactor = image.offsetHeight / originalHeight;
+
+            // Adjust coordinates for each area
+            document.querySelectorAll('area').forEach(area => {
+                const originalCoords = area.dataset.originalCoords || area.getAttribute('coords');
+                if (!area.dataset.originalCoords) {
+                    area.dataset.originalCoords = originalCoords; // Store original coordinates if not already stored
+                }
+
+                const coordsArray = originalCoords.split(',').map((coord, index) => {
+                    // If index is even, it's an x-coordinate; otherwise, it's a y-coordinate
+                    return index % 2 === 0 ? Math.round(coord * widthScaleFactor) : Math.round(coord * heightScaleFactor);
+                });
+                area.setAttribute('coords', coordsArray.join(','));
+            });
+        }
+
+        // Adjust map coordinates on window load and resize
+        window.addEventListener('load', adjustMapCoordinates);
+        window.addEventListener('resize', adjustMapCoordinates);
+
+
+
+        // Slideshow JavaScript functions
+        let slideIndex = [1,1,1,1,1,1,1];
+        let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7",]
+        function initSlideshows() {
+            showSlides(1, 0, 'currentPageLabel0');
+            showSlides(1, 1, 'currentPageLabel1');
+            showSlides(1, 2, 'currentPageLabel2');
+            showSlides(1, 3, 'currentPageLabel3');
+            showSlides(1, 4, 'currentPageLabel4');
+            showSlides(1, 5, 'currentPageLabel5');
+            showSlides(1, 6, 'currentPageLabel6');
+        }
+        window.onload = initSlideshows;
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] + n, no, 'currentPageLabel' + no);
+        }
+
+        function showSlides(n, no, labelElementId) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (!x.length) return; // If x is empty, exit the function
+
+            let currentPageLabel = document.getElementById(labelElementId);
+            currentPageLabel.textContent = ((n - 1) % x.length + 1) + " / " + x.length;
+
+            // If n is greater than the total number of slides, reset it to 1
+            if (n > x.length) { 
+                n = 1; 
+            }
+            // If n is less than 1, set it to the last slide index
+            if (n < 1) {
+                n = x.length;
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[n-1].style.display = "block";  
+
+            slideIndex[no] = n; // Update slide index
+        }
+
+        function redirectToLink(link) {
+            var links = {
+                //sumatra link
+                'Piring Dance' : 'https://www.youtube.com/watch?v=qqTaJMBaz80',
+                'Tabuik Festival' : 'https://www.youtube.com/watch?v=CrqX2vbJ5cc',
+                'Weh Island' : 'https://www.youtube.com/watch?v=8gJeMvIOI4k',
+                //papua attraction link
+                'Bukit Jokowi' : 'https://www.youtube.com/watch?v=xm9a3O7trSk',
+                'Wafsarak Waterfall' : 'https://www.youtube.com/watch?v=GSCcASOf6Jg',
+                'Madang' : 'https://www.youtube.com/watch?v=GyY1-KEqJPc',
+                //bali attraction link
+                'Tanah Lot Temple' : 'https://au.hotels.com/go/indonesia/tanah-lot-temple',
+                'Tirta Empul Temple' : 'https://au.hotels.com/go/indonesia/tirta-empul-temple',
+                //borneo link
+                'Danum Valley' : 'https://www.youtube.com/watch?v=iHgHl0eoWyU',
+                'Mount Kinabalu' : 'https://www.youtube.com/watch?v=RUQckeK7PG0',
+                'Mount Mulu' : 'https://www.youtube.com/watch?v=taNfT9CSqXk',
+                //sulawesi link
+                'Pakarena Dance' : 'https://www.youtube.com/watch?v=1BeOrZYmaew',
+                'Bunaken Festival' : 'https://www.youtube.com/watch?v=hiWXsefl1T4',
+                'Bonerate National Park' : 'https://www.youtube.com/watch?v=VgxJr958fxs',
+                'Malino Highland' : 'https://www.youtube.com/watch?v=SWf7stxISus',
+                //maluku link
+                'Cakalele Dance' : 'https://www.youtube.com/watch?v=Whvn8O2Z5PI',
+                'Natsepa Beach' : 'https://www.youtube.com/watch?v=GZ5CdL6iR0w',
+                //java link
+                'Borobudur Temple' : 'https://www.youtube.com/watch?v=qMQCsRqAq-w',
+                'Istiqual Mosque' : 'https://www.youtube.com/watch?v=R9X0qNr8f8E',
+            };
+            var url = links[link];
+            if (url) {
+                window.open(url, '_blank'); // Open the URL in a new tab/window
+            }
+        }
+
+        window.onload = initSlideshows;
+
+    </script>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>About Us</h3>
+            <p>We are a company dedicated to providing high-quality products and services.</p>
+        </div>
+        <div class="footer-center">
+            <h3>Contact Us</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+        <div class="footer-right">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="social.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Indo-Go2Joy. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+
+
+</html>

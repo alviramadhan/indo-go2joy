@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="foodStyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary in Indonesia</title>
+    
+      
+</head>
+
+<body style="background-color: #17818F;">
+    <header>
+        <img src="logo.png" alt="Indo-Go2Joy Logo">
+    </header>
+
+    <nav>
+        <a href="story.html">Story</a>
+        <a href="food.html">Food</a>
+        <a href="attraction.html">Attraction</a>        
+        <a href="map.html">Map</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="map">
+    <img  src="map.png"  usemap="#workmap"  >
+    </div>
+    
+    <map name="workmap">
+        <area id="sumatra" shape="poly" coords="33,156,114,180,337,339,455,412,410,514,358,520,8,180" alt="Sumatra" onclick="showPopup('sumatra')">
+        <area shape="poly" coords="376,541,412,522,587,533,701,550,715,576,712,602,639,601,493,583,422,568" alt="Java" onclick="showPopup('java')">
+        <area shape="poly" coords="723,592,742,582,1096,583,1104,632,1064,656,920,653,737,616" alt="Bali" onclick="showPopup('bali')">
+        <area shape="poly" coords="542,278,664,290,733,261,758,210,817,212,839,233,869,317,824,367,772,450,720,461,569,437,526,369,514,313" alt="Borneo" onclick="showPopup('borneo')">
+        <area shape="poly" coords="919,312,944,300,1104,293,1021,509,906,515,870,450,876,404" alt="Sulawesi" onclick="showPopup('sulawesi')">
+        <area shape="poly" coords="1193,280,1221,300,1306,462,1139,462,1119,439" alt="Maluku" onclick="showPopup('maluku')">
+        <area shape="poly" coords="1287,374,1363,350,1555,386,1669,419,1660,640,169,614,1307,579,1335,431" alt="Papua" onclick="showPopup('papua')">
+      </map>
+
+      <div id="popup-sumatra" class="popupF">
+        <table>
+            <tr>
+                <td onclick="redirectToLink('soto padang')" class="link-image">
+                    <img src="SumatraF1x1.png" alt="sotoPadang">
+                </td>
+                <td>
+                    <img src="SumatraF1x2.png">
+                </td>
+                <td onclick="redirectToLink('pempek')" class="link-image">
+                    <img src="SumatraF1x3.png" alt="pempek">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="SumatraF2x1.png">
+                </td>
+                <td onclick="redirectToLink('rendang')" class="link-image">
+                    <img src="SumatraF2x2.png" alt="rendang">
+                </td>
+                <td>
+                    <img src="SumatraF2x3.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="redirectToLink('longtong sayur')" class="link-image">
+                    <img src="SumatraF3x1.png" alt="lontong sayur">
+                </td>
+                <td>
+                    <img src="SumatraF3x2.png">
+                </td>
+                <td onclick="redirectToLink('mie aceh')" class="link-image">
+                    <img src="SumatraF3x3.png" alt="mie aceh">
+                </td>
+            </tr>
+        </table>
+        <button onclick="closePopup('popup-sumatra')">Close</button>
+    </div>
+  
+    <div id="popup-java" class="popupF">
+        <table>
+            <tr>
+                <td onclick="redirectToLink('gudeg')" class="link-image">
+                    <img src="JavaFood1.png" alt="gudeg">
+                </td>
+                <td>
+                    <img src="JavaFood1x2.png">
+                </td>
+                <td onclick="redirectToLink('serabi')" class="link-image">
+                    <img src="JavaFood1x3.png" alt="serabi">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="JavaFood2x1.png">
+                </td>
+                <td onclick="redirectToLink('martabak manis')" class="link-image">
+                    <img src="JavaFood2x2.png" alt="martabak manis">
+                </td>
+                <td>
+                    <img src="JavaFood2x3.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="redirectToLink('rawon')" class="link-image">
+                    <img src="JavaFood3x1.png" alt="rawon">
+                </td>
+                <td>
+                    <img src="JavaFood3x2.png">
+                </td>
+                <td onclick="redirectToLink('lumpia semarang')" class="link-image">
+                    <img src="JavaFood3x3.png" alt="lumpia semarang">
+                </td>
+            </tr>
+        </table>
+        <button onclick="closePopup('popup-java')">Close</button>
+    </div>
+ 
+    <div id="popup-bali" class="popupF">
+        <table>
+            <tr>
+                <td onclick="redirectToLink('ayam betutu')" class="link-image">
+                    <img src="BaliF1x1.png" alt="ayam betutu">
+                </td>
+                <td>
+                    <img src="BalliF1x2.png">
+                </td>
+                <td onclick="redirectToLink('satay lilit')" class="link-image">
+                    <img src="BalliF1x3.png" alt="satay lilit">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="BalliF2x1.png">
+                </td>
+                <td onclick="redirectToLink('dadar gulung')" class="link-image">
+                    <img src="BalliF2x2.png" alt="dadar gulung">
+                </td>
+                <td>
+                    <img src="BalliF2x3.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="redirectToLink('lawar')" class="link-image">
+                    <img src="BalliF3x1.png" alt="lawar">
+                </td>
+                <td>
+                    <img src="BalliF3x2.png">
+                </td>
+                <td onclick="redirectToLink('tum chicken')" class="link-image">
+                    <img src="BalliF3x3.png" alt="tum chicken">
+                </td>
+            </tr>
+        </table>
+        <button onclick="closePopup('popup-bali')">Close</button>
+    </div>
+
+    <div id="popup-borneo" class="popupF">
+        <table>
+            <tr>
+                <td onclick="redirectToLink('laksa')" class="link-image">
+                    <img src="BorneoF1x1.png" alt="laksa">
+                </td>
+                <td>
+                    <img src="BorneoF1x2.png">
+                </td>
+                <td onclick="redirectToLink('nasi subut')" class="link-image">
+                    <img src="BorneoF1x3.png" alt="nasi subut">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="BorneoF2x1.png">
+                </td>
+                <td onclick="redirectToLink('tudai')" class="link-image">
+                    <img src="BorneoF2x2.png" alt="tudai">
+                </td>
+                <td>
+                    <img src="BorneoF2x3.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="redirectToLink('bambangan')" class="link-image">
+                    <img src="BorneoF3x1.png" alt="bambangan">
+                </td>
+                <td>
+                    <img src="BorneoF3x2.png">
+                </td>
+                <td onclick="redirectToLink('soto banjar')" class="link-image">
+                    <img src="BorneoF3x3.png" alt="soto banjar">
+                </td>
+            </tr>
+        </table>
+        <button onclick="closePopup('popup-borneo')">Close</button>
+    </div>
+
+    <div id="popup-sulawesi" class="popupF">
+        <table>
+            <tr>
+                <td onclick="redirectToLink('sup konro')" class="link-image">
+                    <img src="SulawesiF1x1.png" alt="sup konro">
+                </td>
+                <td>
+                    <img src="SulawesiF1x2.png">
+                </td>
+                <td onclick="redirectToLink('coto makassar')" class="link-image">
+                    <img src="SulawesiF1x3.png" alt="coto makassar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="SulawesiF2x1.png">
+                </td>
+                <td onclick="redirectToLink('bubur manado')" class="link-image">
+                    <img src="SulawesiF2x2.png" alt="bubur manado">
+                </td>
+                <td>
+                    <img src="SulawesiF2x3.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="redirectToLink('pisang ijo')" class="link-image">
+                    <img src="SulawesiF3x1.png" alt="pisang ijo">
+                </td>
+                <td>
+                    <img src="SulawesiF3x2.png">
+                </td>
+                <td onclick="redirectToLink('wajik')" class="link-image">
+                    <img src="SulawesiF3x3.png" alt="wajik">
+                </td>
+            </tr>
+        </table>
+        <button onclick="closePopup('popup-sulawesi')">Close</button>
+    </div>
+    <div id="popup-maluku" class="popupF">
+        <table>
+            <tr>
+                <td onclick="redirectToLink('papeda')" class="link-image">
+                    <img src="malukuF1x1.png" alt="papeda">
+                </td>
+                <td>
+                    <img src="malukuF1x2.png">
+                </td>
+                <td onclick="redirectToLink('sayur garu')" class="link-image">
+                    <img src="malukuF1x3.png" alt="sayur garu">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="malukuF2x1.png">
+                </td>
+                <td onclick="redirectToLink('colo-colo')" class="link-image">
+                    <img src="malukuF2x2.png" alt="colo-colo">
+                </td>
+                <td>
+                    <img src="malukuF2x3.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="redirectToLink('nasi jaha')" class="link-image">
+                    <img src="malukuF3x1.png" alt="nasi jaha">
+                </td>
+                <td>
+                    <img src="malukuF3x2.png">
+                </td>
+                <td onclick="redirectToLink('sambal tappa')" class="link-image">
+                    <img src="malukuF3x3.png" alt="sambal tappa">
+                </td>
+            </tr>
+        </table>
+        <button onclick="closePopup('popup-maluku')">Close</button>
+    </div>
+    
+    <div id="popup-papua" class="popupF">
+        <table>
+            <tr>
+                <td onclick="redirectToLink('ikan bakar manokwari')" class="link-image"v>
+                    <img src="PapuaF1x1.png" alt="ikan bakar manokwari">
+                </td>
+                <td>
+                    <img src="PapuaF1x2.png">
+                </td>
+                <td onclick="redirectToLink('abon gulung')" class="link-image">
+                    <img src="PapuaF1x3.png" alt="abon gulung">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="PapuaF2x1.png">
+                </td>
+                <td onclick="redirectToLink('lagu lempeng')" class="link-image">
+                    <img src="PapuaF2x2.png" alt="lagu lempeng">
+                </td>
+                <td>
+                    <img src="PapuaF2x3.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="redirectToLink('ikan bungkus')" class="link-image">
+                    <img src="PapuaF3x1.png" alt="ikan bungkus">
+                </td>
+                <td>
+                    <img src="PapuaF3x2.png">
+                </td>
+                <td onclick="redirectToLink('sambal colo2')" class="link-image">
+                    <img src="PapuaF3x3.png" alt="sambal colo-colo">
+                </td>
+            </tr>
+        </table>
+        <button onclick="closePopup('popup-papua')">Close</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>We are a company dedicated to providing high-quality products and services.</p>
+            </div>
+            <div class="footer-center">
+                <h3>Contact Us</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1234567890</p>
+            </div>
+            <div class="footer-right">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="social.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Indo-Go2Joy. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function showPopup(area) {
+            // Hide all popups
+            var popups = document.querySelectorAll('.popup');
+            popups.forEach(function (popup) {
+                popup.style.display = 'none';
+            });
+
+            // Show the popup corresponding to the clicked area
+            var popupId = 'popup-' + area;
+            var popup = document.getElementById(popupId);
+            if (popup) {
+                popup.style.display = 'block';
+                function adjustPopupPosition(popup) {
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+                const popupWidth = popup.offsetWidth;
+                const popupHeight = popup.offsetHeight;
+
+                const leftOffset = (viewportWidth - popupWidth) / 2;
+                const topOffset = (viewportHeight - popupHeight) / 2;
+
+                popup.style.left = leftOffset + 'px';
+                popup.style.top = topOffset + 'px';
+                }   
+            }
+        }
+
+        function closePopup(popupId) {
+            // Close the popup corresponding to the given ID
+            var popup = document.getElementById(popupId);
+            if (popup) {
+            popup.style.display = 'none';
+            }
+        }
+
+        function redirectToLink(link) {
+            var links = {
+                //bali food recipe link
+                'satay lilit' : 'https://whattocooktoday.com/minced-duck-satay-sate-lilit-bebek.html',
+                'ayam betutu' : 'https://whattocooktoday.com/ayam-betutu-bali.html',
+                'dadar gulung' : 'https://bellyrumbles.com/dadar-gulung/',
+                'lawar' : 'https://www.seriouseats.com/balinese-chicken-lawar-recipe',
+                'tum chicken' : 'https://whattocooktoday.com/tum-ayam-bali.html',
+                //papua food recipe link
+                'ikan bakar manokwari' : 'https://friedchillies.com/what-to-cook/malay-what-to-cook/ikan-bakar-in-an-oven/',
+                'abon gulung' : 'https://monicaisinthekitchen.wordpress.com/2020/12/28/meat-floss-bread-rolls-roti-gulung-abon/',
+                'sagu lempeng' : 'https://www.messyvegancook.com/sago-and-coconut-pancakes-with-melted-palm-sugar/',
+                'ikan bungkus' : 'https://amcarmenskitchen.com/2021/08/10/pepes-ikan-fish-in-banana-leaves/',
+                'sambal colo2' : 'https://steemit.com/food/@norasastia/recipes-sambal-colo-colo-ambon-food-5047172d8cbdf',
+                //borneo food recipe link
+                'laksa' : 'https://www.recipetineats.com/laksa-soup/',
+                'nasi subut' : 'https://www.idntimes.com/food/recipe/09-gilang-khuatul-akhmal/nasi-subut-khas-kalimantan-utara-c1c2',
+                'tudai' :'https://www.kompas.com/food/read/2020/08/07/080800075/resep-tumis-tudai-sajian-kerang-darah-khas-kalimantan-utara',
+                'bambangan' : 'https://steemit.com/howto/@cathmot/how-to-make-bambangan-pickle-fruit-and-at-the-same-time-learn-kadazan-language-minsingiho-mongonsom-tuva-bambangan',
+                'soto banjar' : 'https://whattocooktoday.com/soto-banjar.html',
+                //java food recipe link
+                'gudeg' : 'https://dailycookingquest.com/gudeg-jogja-yogyakarta-jackfruit-stew.html',
+                'serabi' : 'https://cookpad.com/pk/recipes/14786815-how-to-make-kue-serabi-indonesian-pancakes',
+                'martabak manis' : 'https://nomadette.com/martabak-manis/',
+                'rawon' : 'https://steemit.com/food/@indorecipe/javanese-beef-soup-rawon',
+                'lumpia semarang' : 'https://come2indonesia.com/traditional-indonesian-food-lumpia-semarang/',
+                //sumatra food recipe link
+                'soto padang' : 'https://dailycookingquest.com/soto-padang-padang-beef-soup.html',
+                'pempek' : 'https://whattocooktoday.com/submarine-egg-nested-fish-cakes-empek-empek-kapal-selam.html',
+                'rendang' : 'https://www.recipetineats.com/beef-rendang/',
+                'lontong sayur' : 'https://www.kuali.com/recipe/rice/lontong-sayur-lodeh/',
+                'mie aceh' : 'https://whattocooktoday.com/aceh-noodles-mie-aceh.html',
+                //sulawesi food recipe link
+                'sup konro' : 'https://monicaisinthekitchen.wordpress.com/2021/01/05/sop-konro-black-beef-ribs-soup-from-makassar-city-indonesia/',
+                'coto makassar' : 'https://dailycookingquest.com/coto-makassar-makassar-beef-soup.html',
+                'bubur manado' : 'https://whattocooktoday.com/manado-porridge-bubur-manado-tinutuan.html',
+                'pisang ijo' : 'https://kitchenesia.grid.id/read/382030926/sweet-and-savory-es-pisang-ijo-for-a-perfect-lunch-companion',
+                'wajik' : 'https://whattocooktoday.com/wajik.html',
+                //maluku food recipe link
+                'papeda' : 'https://medium.com/@juanemre/papeda-recipes-master-cooking-this-exotic-dish-5ec511834960',
+                'sayur garu' : 'https://indonesianstreetfood.wordpress.com/2017/05/19/maluku-indigenous-cuisine/',
+                'colo-colo' : 'https://steemit.com/food/@norasastia/recipes-sambal-colo-colo-ambon-food-5047172d8cbdf',
+                'nasi jaha' : 'https://traditional-taste.blogspot.com/2012/04/how-to-cook-nasi-jaha-manado_8610.html',
+                'sambal tappa' : 'https://www.tasteatlas.com/sambal-tappa',
+            };
+            var url = links[link];
+            if (url) {
+                window.open(url, '_blank'); // Open the URL in a new tab/window
+            }
+        }
+
+        
+function adjustMapCoordinates() {
+    // The original width and height of the image
+    const originalWidth = 1700; // Change this to your image's original width
+    const originalHeight = 800; // Change this to your image's original height
+
+    const image = document.querySelector('.map img'); // Select the responsive image
+    if (!image) return;
+
+    // Calculate the scale factors based on current width and height vs original width and height
+    const widthScaleFactor = image.offsetWidth / originalWidth;
+    const heightScaleFactor = image.offsetHeight / originalHeight;
+
+    // Adjust coordinates for each area
+    document.querySelectorAll('area').forEach(area => {
+        const originalCoords = area.dataset.originalCoords || area.getAttribute('coords');
+        if (!area.dataset.originalCoords) {
+            area.dataset.originalCoords = originalCoords; // Store original coordinates if not already stored
+        }
+
+        const coordsArray = originalCoords.split(',').map((coord, index) => {
+            // If index is even, it's an x-coordinate; otherwise, it's a y-coordinate
+            return index % 2 === 0 ? Math.round(coord * widthScaleFactor) : Math.round(coord * heightScaleFactor);
+        });
+        area.setAttribute('coords', coordsArray.join(','));
+    });
+}
+
+// Adjust map coordinates on window load and resize
+window.addEventListener('load', adjustMapCoordinates);
+window.addEventListener('resize', adjustMapCoordinates);
+
+
+
+    </script>
+
+</body>
+
+</html>

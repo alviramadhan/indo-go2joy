@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Page</title>
+
+    <!-- Google Maps API Script with Error Handling -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC20S150Lb3uPYso23qVwozyK2UTQm8XL8&callback=initMap"
+        onerror="handleError()">
+    </script>
+
+    <style>
+              body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            padding-left: 20px;
+            text-align: center;
+            color: white;
+        }
+        header img{
+            width: 300px;
+            height: 200px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px 5px 5px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        #food-section {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .restaurant-list {
+            max-height: 300px; /* Set the maximum height for the scrollable area */
+            overflow-y: auto; /* Add a vertical scrollbar when needed */
+        }
+
+        .restaurant-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .restaurant-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .restaurant-address {
+            color: #666;
+        }
+
+        .restaurant-rating {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .restaurant-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        #map {
+            height: 300px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-left,
+        .footer-center,
+        .footer-right {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="">
+    </header>
+
+    <nav>
+        <a href="story.html">Story</a>
+        <a href="food.html">Food</a>
+        <a href="attraction.html">Attraction</a>
+        <a href="map.html">Map</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="food-section">
+         <!-- Map Container -->
+         <div id="map"></div>
+        <h2>Restaurants Near You</h2>
+
+        <!-- Scrollable Restaurant List Container -->
+        <div class="restaurant-list">
+
+            <!-- Restaurant Cards (Placeholder Data) -->
+            <div class="restaurant-card">
+                <div class="restaurant-name">Restaurant 1</div>
+                <div class="restaurant-address">123 Main St, Cityville</div>
+                <div class="restaurant-rating">4.5 stars</div>
+                <img class="restaurant-image" src="restaurant1.jpg" alt="Restaurant 1">
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-name">Restaurant 2</div>
+                <div class="restaurant-address">456 Oak St, Townsville</div>
+                <div class="restaurant-rating">4.2 stars</div>
+                <img class="restaurant-image" src="restaurant2.jpg" alt="Restaurant 2">
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-name">Restaurant 3</div>
+                <div class="restaurant-address">789 Elm St, Villagetown</div>
+                <div class="restaurant-rating">4.8 stars</div>
+                <img class="restaurant-image" src="restaurant3.jpg" alt="Restaurant 3">
+            </div>
+
+            <!-- Add more restaurant cards as needed -->
+
+        </div>
+
+ 
+        <!-- Map Initialization Script -->
+        <script>
+            function initMap() {
+                // Set the coordinates for Jakarta, Indonesia
+                var myLatLng = { lat: -6.2088, lng: 106.8456 };
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLatLng,
+                    zoom: 12
+                });
+
+                // Example: Add a marker for a location in Jakarta
+                var jakartaLatLng = { lat: -6.2088, lng: 106.8456 };
+                var marker = new google.maps.Marker({
+                    position: jakartaLatLng,
+                    map: map,
+                    title: 'Jakarta, Indonesia'
+                });
+
+                // Repeat for other locations as needed
+            }
+        </script>
+
+        <!-- Error Handling Script -->
+        <script>
+            function handleError() {
+                console.error('Failed to load Google Maps API.');
+            }
+        </script>
+    </section>
+
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>About Us</h3>
+            <p>We are a company dedicated to providing high-quality products and services.</p>
+        </div>
+        <div class="footer-center">
+            <h3>Contact Us</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+        <div class="footer-right">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="social.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

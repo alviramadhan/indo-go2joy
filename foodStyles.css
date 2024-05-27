@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    padding-left: 20px;
+    text-align: center;
+    color: white;
+}
+header img{
+    width: 300px;
+    height: 200px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 5px 5px;
+    display: inline-block;
+    font-size: 20px;
+}
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px 5px 5px;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.popupF {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 80%; /* Set a maximum height for the popup */
+    max-width: 80%;
+    overflow-y: auto; /* Allow vertical scrolling when content exceeds the maximum height */
+}
+
+.popupF table {
+    width: 100%;
+    border-collapse: collapse; /* This property removes the border spacing between table cells */
+}
+
+.popupF td {
+    text-align: center;
+    border: none; /* This property removes the border from table cells */
+}
+
+.popupF img {
+    width: 100% ;
+    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.popupF button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.popupF button:hover {
+    background-color: #555;
+}
+
+.link-image{
+    cursor: pointer;
+}
+
+#sumatra {
+    margin-top: 250px;
+    margin-left: -50px;
+    width: 270px;
+    height: 350px;
+    background-color: transparent;
+}
+
+area:hover {
+    cursor: pointer;
+}
+
+.map { 
+    position: relative; 
+    width: 100%; 
+    max-width: 1700px; 
+    margin: 0 auto; 
+} 
+
+.map img { 
+    width: 100%; 
+    height: auto; 
+} 
+
+area { 
+    transition: all 0.3s ease; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+

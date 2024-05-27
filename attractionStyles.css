@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    padding-left: 20px;
+    text-align: center;
+    color: white;
+}
+header img{
+    width: 300px;
+    height: 200px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 5px 5px;
+    display: inline-block;
+    font-size: 20px;
+}
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px 5px 5px;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.slideshow-container img{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+    max-width: max-content;
+}
+
+.popupA {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 80%; /* Set a maximum height for the popup */
+    max-width: 80%;
+    z-index: 9999;
+    overflow-y: auto; /* Allow vertical scrolling when content exceeds the maximum height */
+    background-image: url('paper\ background.avif'); /* Background image */
+    background-size: cover; /* Ensure the background image covers the entire popup */
+}
+
+.popupA h1{
+    font-family: Garamond, "Times New Roman", serif;
+    text-align: center;
+}
+
+.popupA p{
+    padding: 0 30px 0 30px;
+    font-weight: bolder;
+    font-family: "papyrus", fantasy;
+}
+/* Hide all slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    
+    bottom: 0px; /* Adjust as needed */
+    cursor: pointer;
+    padding: 2px 5px 2px 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.prev {
+    left: 0; /* Position on the left side */
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Active dot */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.popupA button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px; /* Adjust width of the button */
+    height: 30px; /* Adjust height of the button */
+    background-color: darkred; /* Example background color */
+    color : white;
+    border: none;
+    cursor: pointer;
+    /* Add styles for a square button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupA button:hover {
+    background-color: #555;
+}
+
+#sumatra {
+    margin-top: 250px;
+    margin-left: -50px;
+    width: 270px;
+    height: 350px;
+    background-color: transparent;
+}
+
+area:hover {
+    cursor: pointer;
+}
+
+.map { 
+    position: relative; 
+    width: 100%; 
+    max-width: 1700px; 
+    margin: 0 auto; 
+} 
+
+.map img { 
+    width: 100%; 
+    height: auto; 
+} 
+
+area { 
+    transition: all 0.3s ease; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+.dot-class{
+    text-align: center;
+}
